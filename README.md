@@ -5,7 +5,9 @@ Got a question ? Then consult the magic 8-ball !
 
 
 ## Information
-This was another project developed for fun. Making use of HTML, CSS ( Animations for modern browsers  ), and JavaScript. You can find a working [demo](http://opensource.olympe.in/magic-8-ball/) in the projects section of my website, provided my host isn't doing maintenance. For the best experience, make sure that your browser is up to date !
+This was another project developed for fun. Making use of HTML, CSS, and JavaScript. You can find a working [demo](http://opensource.olympe.in/magic-8-ball/) in the projects section of my website, provided my host isn't doing maintenance. For the best experience, make sure that your browser is up to date !
+
+CSS was used for a majority of transitions and animations, and of course JavaScript is used for the main logic ! The answer triangles themselves are images, due to the fact that it's a bit difficult to maintain a perfect appearance with CSS alone. You can make triangles with 2 transparent borders and 1 colored, but I found it was still a difficult task. It should be achievable if you're using the canvas element, though. :)
 
 
 ## Trivia
