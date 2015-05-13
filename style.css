@@ -1,0 +1,186 @@
+body {
+  color:#FFF;
+  font-size:12px;
+  font-family:Arial, sans-serif;
+  background:#003;
+}
+
+h1 {
+  font-size:24px;
+  font-family:Trebuchet MS, Arial, sans-serif;
+  text-align:center;
+}
+
+a {
+  color:#399;
+  text-decoration:none;
+}
+
+a:hover { color:#6CC }
+
+input {
+  color:#FFF;
+  background:#111;
+  border:1px solid #333;
+  border-radius:3px;
+  padding:3px;
+}
+
+#magic8Ball {
+  background:#151515;
+  box-shadow:0 48px 24px rgba(255, 255, 255, 0.05) inset, 0 -48px 24px rgba(0, 0, 0, 0.2) inset;
+  border-radius:250px;
+  height:300px;
+  width:300px;
+  position:relative;
+  overflow:hidden;
+  margin:0 auto;
+  cursor:help;
+}
+
+.inner {
+  border-radius:100px;
+  height:150px;
+  width:150px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-75px;
+  margin-left:-75px;
+  overflow:hidden;
+}
+
+#eightSide {
+  color:#000;
+  font-size:96px;
+  text-align:center;
+  line-height:150px;
+  background:#FFF;
+}
+
+#answerSide {
+  background:#000;
+  border:5px solid #111;
+  margin-top:-80px;
+  margin-left:-80px;
+}
+
+#answer {
+  color:#FFF;
+  font-size:10px;
+  text-align:center;
+  width:100px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-35px;
+  margin-left:-50px;
+  -webkit-animation:float linear 5000ms infinite;
+          animation:float linear 5000ms infinite;
+}
+
+.shake {
+  -webkit-animation:shake linear 250ms infinite;
+          animation:shake linear 250ms infinite;
+}
+
+.hidden {
+  opacity:0;
+  visibility:hidden;
+  -webkit-transition:1000ms;
+     -moz-transition:1000ms;
+       -o-transition:1000ms;
+          transition:1000ms;
+}
+
+.user, .the-8-ball {
+  color:#399;
+  font-weight:bold;
+}
+
+.the-8-ball { color:#993 }
+
+#logBox {
+  background:#222;
+  border:1px solid #333;
+  border-radius:3px;
+  width:600px;
+  margin:0 auto;
+  padding:6px 12px;
+  margin-top:30px;
+}
+
+#magicLog {
+  background:#111;
+  border-radius:3px;
+  margin-bottom:6px;
+  padding:3px;
+  height:150px;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
+#footer {
+  text-align:center;
+  position:relative;
+}
+
+#question {
+  height:16px;
+  width:494px;
+  padding:4px;
+  padding-right:100px
+}
+
+#ask {
+  background:#333;
+  border-radius:0 3px 3px 0;
+  height:26px;
+  width:100px;
+  margin-left:3px;
+  position:absolute;
+  right:0;
+  cursor:pointer;
+}
+#ask:hover { background:#033 }
+
+#links {
+  color:#066;
+  width:626px;
+  margin:0 auto;
+  margin-top:10px;
+}
+
+
+/* magical animations */
+@-webkit-keyframes shake {
+  0% { top:0px }
+  25% { top:15px }
+  50% { top:30px }
+  75% { top:15px }
+  100% { top:0px }
+}
+
+@keyframes shake {
+  0% { top:0px }
+  25% { top:15px }
+  50% { top:30px }
+  75% { top:15px }
+  100% { top:0px }
+}
+
+@-webkit-keyframes float {
+  0% { top:40% }
+  25% { top:50% }
+  50% { top:60% }
+  75% { top:50% }
+  100% { top:40% }
+}
+
+@keyframes float {
+  0% { top:40% }
+  25% { top:50% }
+  50% { top:60% }
+  75% { top:50% }
+  100% { top:40% }
+}
