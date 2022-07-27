@@ -1,0 +1,29 @@
+{
+  "name": "Magic 8 Ball",
+  "version": "1",
+  "short_name": "Magic 8 Ball",
+  "description": "Magic 8 Ball",
+  "icons": [
+      {
+        "src": "/m8b/iconified/apple-touch-icon-57x57.png",
+        "type": "image/png",
+        "sizes": "57x57"
+      },
+      {
+        "src": "/m8b/iconified/apple-touch-icon-72x72.png",
+        "type": "image/png",
+        "sizes": "72x72"
+      },
+      {
+        "src": "/m8b/iconified/apple-touch-icon-144x144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      }
+      ],
+  "id": "/m8b/",
+  "start_url": "/m8b/",
+  "scope": "/m8b/",
+  "display": "standalone",
+  "background_color": "#000",
+  "theme_color": "#2196F3"
+}
