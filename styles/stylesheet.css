@@ -1,6 +1,6 @@
 body {
   color:#FFF;
-  font-size:12px;
+  font-size:16px;
   font-family:Arial, sans-serif;
   background:#003;
 }
@@ -108,16 +108,21 @@ input {
   margin:0 auto;
   padding:6px 12px;
   margin-top:30px;
+  max-width:1000px;
 }
 
 #magicLog {
   background:#111;
   border-radius:3px;
   margin-bottom:6px;
-  padding:3px;
+  padding:0 10px;
   height:150px;
   overflow-y:auto;
   overflow-x:hidden;
+}
+
+#magicLog p {
+  margin:10px 0;
 }
 
 #footer {
@@ -126,16 +131,23 @@ input {
 }
 
 #question {
-  height:16px;
+  font-size:16px;
+  height:20px;
   width:62%;
   padding:4px;
   padding-right:100px
 } 
 
+input[type="text"]:active, input[type="text"]:focus {
+  border-color:#066;
+  outline:none;
+}
+
 #ask {
+  font-size:16px;
   background:#333;
-  border-radius:0 3px 3px 0;
-  height:26px;
+  border-radius:3px;
+  height:30px;
   width:100px;
   margin-left:3px;
   position:absolute;
@@ -146,7 +158,7 @@ input {
 
 #links {
   color:#066;
-  width:626px;
+  max-width:626px;
   margin:0 auto;
   margin-top:10px;
 }
@@ -183,4 +195,11 @@ input {
   50% { top:60% }
   75% { top:50% }
   100% { top:40% }
+}
+
+/* ADS */
+.ad-container {
+  text-align:center;
+  margin-top:50px;
+  margin-bottom:20px;
 }

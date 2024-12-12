@@ -8,15 +8,15 @@
     <meta name="keywords" content="Magic, 8-ball, Open Source">
     <meta name="description" content="Ask the Magic 8-ball a question, directly in your browser! Based off the fortune telling toy by mattell.">
     <meta name="author" content="Seth Clydesdale">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="styles/stylesheet.min.css">
     <link rel="shortcut icon" href="iconified/favicon.ico">
     <meta id=my name="viewport" content="width=350, user-scalable=no" /><!-- initial-scale=1.0, maximum-scale=1.0, -->
     
-    <link rel="manifest" href="/m8b/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <script type="text/javascript">
 		function deregsw() {
 			if ('serviceWorker' in navigator) {
-			  navigator.serviceWorker.register('/m8b/sw.js', {scope: '/m8b/'}).then(function(registration) {
+			  navigator.serviceWorker.register('scripts/sw.js', {scope: '/m8b/'}).then(function(registration) {
 			    console.log('Registration succeeded.');
 			    registration.unregister().then(function(boolean) {
 			      if (boolean==true) console.log('unregister is successful');
@@ -29,7 +29,7 @@
 
 		const main = async () => {
 			if('serviceWorker' in navigator) {
-				navigator.serviceWorker.register('/m8b/sw.js', { scope: '/m8b/' })
+				navigator.serviceWorker.register('scripts/sw.js', { scope: '/m8b/' })
 					.then(function(registration) {
 					console.log('Service Worker Registered');
 				});
@@ -40,7 +40,7 @@
 		}
 		main();
     </script>
-    
+    <script src="scripts/ga.js" async></script>
   </head>
 
   <body>
@@ -59,7 +59,7 @@
     </div>
     <div id="links"><a href="#" id="username">Give yourself a name</a> &bull; <a href="#" id="help">Help</a> <div style="float:right"><a href="https://github.com/SethClydesdale/magic-8-ball" target="_blank">Created by Seth Clydesdale</a></div></div>
     
-    <script src="magic.js"></script>
+    <script src="scripts/magic.js"></script>
   </body>
   
 </html>
